@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <h1 class="display-3">Data</h1>
+    <p class="secret-text">Upload your file</p>
+    <form action="/submit" method="POST">
+      <div class="form-group">
+        <input type="file" class="form-control text-center" name="dataFile" />
+      </div>
+      <button type="submit" class="btn btn-dark">Upload</button>
+    </form>
+  </div>
+</div>
+<%- include('partials/footer') %>
